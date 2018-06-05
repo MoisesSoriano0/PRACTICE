@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ActivityLifeCycleAndIntent</string>
+    <string name="send_personp_to_second">Send PersonP to second</string>
+</resources>
