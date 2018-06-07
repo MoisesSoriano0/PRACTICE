@@ -47,51 +47,51 @@ public class MainActivity extends AppCompatActivity {
         etPersonAge = findViewById(R.id.etPersonAge);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d(TagIt.with(this), "onStart");
-    }
+        @Override
+        protected void onStart() {
+            super.onStart();
+            Log.d(TagIt.with(this), "onStart");
+        }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
+        @Override
+        protected void onPause() {
+            super.onPause();
 
-        //Show message in screen
-//        Toast.makeText(this,"onPause()", Toast.LENGTH_LONG).show();
-        Log.d(TagIt.with(this), "onPause");
-    }
+            //Show message in screen
+    //        Toast.makeText(this,"onPause()", Toast.LENGTH_LONG).show();
+            Log.d(TagIt.with(this), "onPause");
+        }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d(TagIt.with(this), "onResume");
-    }
+        @Override
+        protected void onResume() {
+            super.onResume();
+            Log.d(TagIt.with(this), "onResume");
+        }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d(TagIt.with(this), "onStop");
-    }
+        @Override
+        protected void onStop() {
+            super.onStop();
+            Log.d(TagIt.with(this), "onStop");
+        }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(TagIt.with(this), "onDestroy");
-    }
+        @Override
+        protected void onDestroy() {
+            super.onDestroy();
+            Log.d(TagIt.with(this), "onDestroy");
+        }
 
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d(TagIt.with(this), "onRestart");
-    }
+        @Override
+        protected void onRestart() {
+            super.onRestart();
+            Log.d(TagIt.with(this), "onRestart");
+        }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-//        newConfig.orientation portrait = 1
-        Log.d(TagIt.with(this), "onConfigurationChanged " + newConfig.orientation);
-    }
+        @Override
+        public void onConfigurationChanged(Configuration newConfig) {
+            super.onConfigurationChanged(newConfig);
+    //        newConfig.orientation portrait = 1
+            Log.d(TagIt.with(this), "onConfigurationChanged " + newConfig.orientation);
+        }
 
     public void onChangeTextView(View view) {
         tvMain.setText(etMain.getText().toString());
