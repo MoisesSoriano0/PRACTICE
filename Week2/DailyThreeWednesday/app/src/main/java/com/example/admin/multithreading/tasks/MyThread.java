@@ -4,6 +4,10 @@ import android.os.Handler;
 import android.os.Looper;
 import android.widget.TextView;
 
+import com.example.admin.multithreading.model.MyEvent;
+
+import org.greenrobot.eventbus.EventBus;
+
 public class MyThread extends Thread {
 
     //    i can pass the instance of the textview to this calss and update it right here
@@ -23,6 +27,10 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         super.run();
+
+//      using eventbus to post
+        MyEvent myEvent = new MyEvent("Starting task");
+        EventBus.getDefault().post(myEvent);
 
         // with this
         handler.post(new Runnable() {
@@ -48,5 +56,8 @@ public class MyThread extends Thread {
             }
         });
 
+        //using eventbus to post
+        myEvent.setData("Task Completed");
+        EventBus.getDefault().post(myEvent);
     }
 }
