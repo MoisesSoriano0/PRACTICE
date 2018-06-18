@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler);
 
         recyclerView.setAdapter(mainAdapter);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
     }
 
     private ArrayList<String> generateItems() {
