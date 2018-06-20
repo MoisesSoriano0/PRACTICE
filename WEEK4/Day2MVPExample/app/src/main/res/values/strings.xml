@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Day2MVPExample</string>
+    <string name="get_result">GET RESULT</string>
+    <string name="go_to_detail">GO TO DETAIL</string>
+</resources>
